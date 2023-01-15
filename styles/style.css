@@ -290,5 +290,19 @@ nav ul li a {
     margin: 30px 40px;
 }
 
+.footer-container {
+    text-align: center;
+    background-color: #FFF4E7;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.footer-container p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #424242;
+}
  
 
