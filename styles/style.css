@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
-
-/*---------------
-Utilities styles 
-----------------*/
 * {
     margin: 0;
     padding: 0;
@@ -15,19 +11,13 @@ body {
     margin: 0 auto;
 }
 
-/* All paragraph common color */
+
 p {
     color: #727272;
     line-height: 26px;
 }
 
-/* All heading common color */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h4 {
     color: #131313;
 }
 
@@ -149,7 +139,6 @@ nav ul li a {
     color: #FF900E;
 }
 
-/* Feature 2 Section */
 .feature-2 {
     width: 90vw;
     margin: 3rem auto;
@@ -240,31 +229,23 @@ nav ul li a {
     cursor: pointer;
 }
 
-.fact-box::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 1rem;
-    background-color: #FF900E;
-    transition: width 0.5s ease;
-}
 
 .fact-box::after {
     content: "";
     position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 1rem;
-    background-color: #FF900E;
-    transition: width 0.5s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    
+    transition: 0.5s ease;
 }
 
-.fact-box:hover::before,
+
 .fact-box:hover::after {
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 
 /* Project Section */
@@ -281,47 +262,25 @@ nav ul li a {
 }
 
 .project-box {
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px rgba(43, 41, 41, 0.1);
+    border: 1px solid rgb(63, 62, 62);
     border-radius: 2px;
     position: relative;
     overflow: hidden;
 }
 
-.project-box::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    z-index: 1;
-    transition: 0.5s ease;
-}
-
-.project-box:hover::after {
-    background-color: rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-}
 
 .project-box img {
     width: 100%;
 }
-
-.project-box h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    /* z-index: 999; */
-}
 .sponsor h1 {
+    margin:10px;
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
     text-align: center;
 }
+
 
 .sponsor P {
     text-align: center;
